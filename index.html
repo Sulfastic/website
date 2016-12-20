@@ -34,13 +34,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.amd.min.js"></script>
     <![endif]-->
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="hello()">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<script src="js/init.js"></script>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -57,32 +59,29 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">O mnie</a>
+                        <a class="page-scroll" href="#about">About me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">CV</a>
+                        <a class="page-scroll" href="#cv">CV</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Projekty</a>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Kontakt</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
     <header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Paweł Marciniec</h1> 
-                <h1>strona domowa</h1>
+                <h1>home page</h1>
                 <hr>
-                <p>Zapraszam do lektury :)</p>
-                <!--<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>-->
+                <p>let's move on</p>
             </div>
         </div>
     </header>
@@ -91,23 +90,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Hej! jestem Paweł oraz...</h2>
+                    <h2 class="section-heading">Hi! I am... <br> Paweł Marciniec and...</h2>
                     <hr class="light">
-                    <p class="text-faded">jestem studentem 3 roku informatyki stosowanej na Wydziale Inżynierii Metali i Informatyki Przemysłowej AGH. Lubię słuchać różnych rodzajów muzyki, głównie Hip-Hopu, twórczość Blizzarda: książki i gry z serii Warcraft. Interesuję się programowaniem (moim osiągnięciem jest Mario napisane w C++ przy uzyciu biblioteki Allegro oraz gra w statki w Javie) i testowaniem gier oraz wszystkim co z tym związane. Nie jest mi obcy Microsoft Visual Studio oraz NetBeans.
-                                          Stale zdobywam nowe umiejętności, gdyż jak to mówią, "Człowiek uczy się całe życie". Lubię oglądać filmy fantasy oraz science fiction, czytać komiksy DC i Marvela. Oprócz tego jestem osobą aktywną i staram się dbać o formę.<br> Sprawdz równiez moj LinkedIn </p>
-                    <a href="https://www.linkedin.com/profile/view?id=412248926&trk=hp-identity-name" class="btn btn-default btn-xl">Chcesz więcej? :)</a>
+                    <p class="text-faded">Currently I am a Junior Software Developer in Ericpol/Ericsson and by the weekends, a student at the Jagiellonian University: Faculty of Physics, Astronomy and Applied Computer Science, studying Applied Computer Science with specialization in Video Games Production.<br>
+                        I like listening to different kinds of music, especially Hip-Hop. The Blizzard Entertainment's creations and nearly everything in association with it, is my hobby: books, Warcraft games and the famous <a target="_blank" href="http://www.imdb.com/title/tt0803096/">movie</a>.<br>
+                        I'm interested in code writing, especially java and javascript ones and game development which is the thing that I'd like to do as my actual job. I really like working in JetBrains environment like IntelliJ or Webstorm.<br>
+                        Over and over I'm trying to learn some new cool things from the above mentioned languages to become even better programmer.<br>
+                        Besides everything I'm also into watching fantasy and sci fi movies, reading comic books and also working out at the gym.<br>
+                        Want even more? </p>
+                    <a target="_blank" href="https://www.linkedin.com/in/paweł-marciniec-b92089b6" class="btn btn-default btn-xl">Check out my LinkedIn</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section id="cv">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Szukasz programisty?<br> Dobrze trafiłeś!</h2>
+                    <h2 class="section-heading">Looking for a programmer?<br> Bull's eye!</h2>
                     <hr class="primary">
-                    <p>Sprawdź moje CV</p>
+                    <p>Check out my CV</p>
                 </div>
             </div>
         </div>
@@ -118,13 +121,13 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <a href=".CV/Pawel_Marciniec_cv_pl.pdf" style="text-decoration: none" class="fa fa-4x fa-diamond wow bounceIn text-primary" data-wow-delay=".1s"></a>
-                        <h3>W języku polskim</h3>
+                        <h3>In polish</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <a href=".CV/Pawel_Marciniec_cv_eng.pdf" style="text-decoration: none" class="fa fa-4x fa-diamond wow bounceIn text-primary" data-wow-delay=".2s"></a>
-                        <h3>W języku angielskim</h3>
+                        <h3>In english</h3>
                     </div>
                 </div>
             </div>
@@ -133,9 +136,9 @@
 
     <section class="no-padding" id="portfolio">
         <div class="container text-center">
-            <h2>Sprawdź też moje projekty!</h2>
+            <h2>Check out my projects!</h2>
             <hr>
-            <p>Przed pierwszym uruchomieniem zapoznaj się z Readme, nie przejmuj się gdy aplikacja się wysypie (stale się uczę)</p>
+            <p>Before first use, please read the Readme file</p>
         </div>
         <div class="container-fluid">   
             <div class="row no-gutter">
@@ -148,7 +151,7 @@
                                     Java
                                 </div>
                                 <div class="project-name">
-                                    Algorytm genetyczny
+                                    Implementation of Genetic algorythm
                                 </div>
                             </div>
                         </div>
@@ -163,7 +166,7 @@
                                     Java
                                 </div>
                                 <div class="project-name">
-                                    Gra w życie
+                                    Implementation of Game of life
                                 </div>
                             </div>
                         </div>
@@ -178,7 +181,7 @@
                                     Java
                                 </div>
                                 <div class="project-name">
-                                    Naiwny rozrost ziarna
+                                    Implementation of Naive growth
                                 </div>
                             </div>
                         </div>
@@ -191,10 +194,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Java
+                                    C++
                                 </div>
                                 <div class="project-name">
-                                    Arduino: straszak na gołębie
+                                    Arduino: pigeon scarer
                                 </div>
                             </div>
                         </div>
@@ -208,13 +211,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Łap moje dane kontaktowe!</h2>
+                    <h2 class="section-heading">Catch my contact info!</h2>
                     <hr class="primary">
-                    <p>Brakuje ci kogoś takiego jak ja w swoim zespole?<br> Pisz, dzwoń, smsuj do mnie :)</p>
+                    <p>Looking for the guy like me in your team? Don't hesitate!<br>Just call me:</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>667 968 415</p>
+                    <p>883 587 815</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
